@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Key Access</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Fungsi untuk menavigasi ke URL JSON saat menu diklik
+    function navigateToJSON(apiKey) {
+      window.location.href = `http://localhost:3000/apikey/${apiKey}.json`;
+    }
+  </script>
+</head>
+<body>
+
+  <div id="sidebar">
+    <h2>API Features</h2>
+    <ul>
+      <li><a href="javascript:void(0)" onclick="navigateToJSON('tiktok')">TikTok</a></li>
+      <li><a href="javascript:void(0)" onclick="navigateToJSON('scdl')">SCDL</a></li>
+      <li><a href="javascript:void(0)" onclick="navigateToJSON('instagram')">Instagram</a></li>
+      <li><a href="javascript:void(0)" onclick="navigateToJSON('twitter')">Twitter</a></li>
+      <li><a href="javascript:void(0)" onclick="navigateToJSON('youtube')">YouTube</a></li>
+      <li><a href="javascript:void(0)" onclick="navigateToJSON('mediafire')">MediaFire</a></li>
+    </ul>
+  </div>
+
+  <div id="main-content">
+    <h1>Selamat datang di API TRIYA</h1>
+    <p>Pilih salah satu layanan di sidebar untuk mengakses API key yang sesuai.</p>
+  </div>
+
+</body>
+</html>
